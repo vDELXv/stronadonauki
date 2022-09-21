@@ -1,0 +1,60 @@
+<article class="punkt" id="punkt4">
+  <div class="bok bok4"><h2 id="podstawy">PODSTAWY</h2></div>
+    <p>
+      -<b>&#60;script&#62; &#60;/script&#62;</b> - deklaracja skryptu.<br>
+      -<b>&#60;script src="link/ścieżka dostępu"&#62;&#60;/script&#62;</b> - deklaracja funkcji z pliku zewnętrznego.<br>
+      -<b>function</b> - blok kodu JavaScript, który może zostać wykonany, gdy zostanie „wezwany”.<br>
+      -<b>document.getElementById(id)</b> - uzuskiwanie dostępu do elementu HTML.<br>
+      -<b>innerHTML</b> - definiuje zawartość HTML.<br>
+      <pre>
+    &#60;script&#62;
+    document.getElementById("id").innerHTML="Przykład"
+    &#60;/script&#62;
+      </pre>
+    </p>
+  <div class="bok bok4"><h2 id="deklaracja">DEKLARACJA</h2></div>
+  <p>
+    -<b>let</b> - deklaracja zmiennej lokalnej.<br>
+    -<b>var</b> - deklaracja zmiennej globalnej.<br>
+    -<b>const</b> - deklaracja stałej.<br>
+    <pre>
+    {                              var x = 10;           let i = 5;
+      var x = 2;                   // Tu x to 10         for (let i = 0; i < 10; i++) {
+    }                              {
+    // x może być używane tu         let x = 2;          }
+                                    // Tu x to 2        // Tu i to 5
+                                   }
+                                   // Tu x to 10
+  </pre>
+  </p>
+  <div class="bok bok4"><h2 id="zegarr">ZEGAR</h2></div>
+      <pre>
+    function zegarek()
+    {
+      let data = new Date();
+      let godzina = data.getHours();
+      let minuta = data.getMinutes();
+      let sekunda = data.getSeconds();
+
+      if (minuta < 10) minuta = "0" + minuta;
+      if (sekunda < 10) sekunda = "0" + sekunda;
+
+      let pokazDate = godzina + ':' + minuta + ':' + sekunda;
+      document.getElementById("zegar").innerHTML = pokazDate;
+
+      setTimeout(zegarek, 1000);
+    }
+      </pre>
+      <p>
+      -Najpierw deklarujemy zmienną <b>data</b> do której przypisujemy aktualną datę.<br><br>
+      -Następnie do nowej zmiennej <b>godzina</b> porzypisujemy godzinę z zmiennej <b>data</b>.<br><br>
+      -Następnie do nowej zmiennej <b>minuta</b> porzypisujemy minutę z zmiennej <b>data</b>.<br><br>
+      -Następnie do nowej zmiennej <b>sekunda</b> porzypisujemy sekundę z zmiennej <b>data</b>.<br><br>
+      -Następnie jeśli <b>minuta</b> jest mniejsza od 10, czyli by była pokazana jako np. 00:8:00 zamiast 00:08:00 to dodajemy 0 przed zmienną <b>minuta</b>.<br><br>
+      -Następnie jeśli <b>sekunda</b> jest mniejsza od 10, czyli by była pokazana jako np. 00:00:6 zamiast 00:00:06 to dodajemy 0 przed zmienną <b>sekunda</b>.<br><br>
+      -Następnie do nowej zmiennej <b>pokazDate</b> przypisujemy zmienną <b>godzina</b> i dodajemy dwukropek w cudzysłowie itd. aż do zmiennej <b>sekunda</b>.<br><br>
+      -Następnie w elemencie HTML o id zegar wczytujemy zmienną <b>pokazDate</b>.<br><br>
+      -Następnie wywołujemy funkcję <b>setTimeout(zegarek, 1000)</b>, która służy do wywoływania z opóźnieniem funkcji w pierwszym parametrze (zekarek). W drugim parametrze podajemy czas w milisekundach po jakim zostanie ta funkcja wywołana. Czyli w tym przypadku co 1s będzie się odświeżać data.<br><br>
+      -W <b>body</b> wpisujemy <b>onload="zegarek()"</b> co oznacza że funkcja <b>zegarek()</b> wykona się natychmiast po załadowaniu strony i będzie się odświeżać funkcaj co 1s (setTimeout).
+    </p>
+</article>

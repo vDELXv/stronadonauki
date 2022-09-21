@@ -1,0 +1,199 @@
+.rodzajegier{
+  width: 780px;
+  transform: translateY(-10px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.gry {
+  width: 350px;
+  height: 350px;
+  margin: 20px;
+  float: left;
+  background-color: #3234cd;
+  border-radius: 10px;
+  position: relative;
+  transition: 0.3s;
+  transform: scale(1);
+}
+.gry > a{
+  font-size: 60px;
+  font-weight: normal;
+  font-family: monospace;
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  border-radius: 10px;
+}
+.gry:hover{
+  background-color: #282aa4;
+  transition: 0.3s;
+  transform: scale(0.9);
+  text-shadow: 0 0 3px white;
+
+}
+    .btn{
+        width:50px;
+        height:50px;
+        border-color: #3234cd;
+        color: #3234cd;
+    }
+    .btnnew{
+        background-color:#3234cd;
+        color:#3234cd;
+        border-color: #3234cd;
+    }
+    .btnclick{
+        color: white;
+        background-color:#5b5dd7;
+        border-color: #5b5dd7;
+    }
+    .btnold{
+         background-color:#250679;
+         color:#250679;
+         border-color: #250679;
+    }
+    #plansz{
+      display: inline-block;
+    }
+    #przy1{
+      background:#3234cd;
+      padding: 5px;
+      COLOR: WHITE;
+      border: 0;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    #przy{
+      background:#3234cd;
+      padding: 5px;
+      border: 0;
+      margin-bottom: 20px;
+      display: none;
+      border-radius: 10px;
+      color: white;
+    }
+    #ilosc{
+      background:#3234cd;
+      padding: 5px;
+      outline: 0;
+      border: 0;
+      margin-bottom: 20px;
+      display: none;
+      border-radius: 10px;
+      color: white;
+
+    }
+    #nazwa{
+      background-color:#3234cd;
+      padding: 5px;
+      outline: 0;
+      border: 0;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      color: white;
+    }
+    ::placeholder {
+    color: white;
+    opacity: 1;
+    }
+
+    :-ms-input-placeholder {
+     color: white;
+    }
+
+    ::-ms-input-placeholder {
+     color: white;
+    }
+    .wyniki{
+      color:white;
+      font-family: monospace;
+      text-align: center;
+      font-size: 20px;
+    }
+    h1{
+      text-align: center;
+      color:white;
+      font-family: monospace;
+      display: none;
+    }
+    #czas{
+      display: none;
+      background-color: #3234cd;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 20px;
+    }
+    #gratulacje{
+      color: #00e600;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 50px;
+      text-align: center;
+      display: none;
+      transform: translateY(-25px);
+    }
+    #ranking {
+      margin-top: 20px;
+      font-size: 30px;
+    }
+    .btnn{
+    	width: 40px;
+			height: 40px;
+			background-color: white;
+			border: 1px solid black;
+			border-radius: 5px;
+			outline: none;
+     }
+	body{
+			background-color: rgb(38, 38, 38);
+		}
+	.old{
+		background-color: red;
+	}
+	.new{
+		background-color: green;
+	}
+	#wisielec{
+		font-family: monospace;
+		color: white;
+		text-align: center;
+		font-size: 500%;
+		margin: 0;
+	}
+	#pole{
+		color: white;
+    text-align: center;
+		font-size: 300%;
+		margin: 0px;
+	}
+	#przyciski1{
+		display: inline-block;
+    width: 90%;
+		margin: auto;
+	}
+  img{
+    width: 25%;
+  }
+  #nowagra{
+    width: 100px;
+    border: 0;
+    height: 50px;
+    margin: 20px;
+    background-color: #3234cd;
+    border-radius: 10px;
+    transition: 0.3s;
+    transform: scale(1);
+    font-size: 20px;
+    font-weight: normal;
+    font-family: monospace;
+    color: white;
+    text-decoration: none;
+  }

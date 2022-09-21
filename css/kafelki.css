@@ -1,0 +1,115 @@
+.obrot-kafelka {
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  perspective: 1000px;
+  transform: translateY(90px);
+  margin: 20px;
+  float: left;
+}
+
+.obrot-kafelka-srodek {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.obrot-kafelka:hover .obrot-kafelka-srodek {
+  transform: rotateY(180deg);
+}
+
+.obrot-kafelka-przod, .obrot-kafelka-tyl {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.obrot-kafelka-przod {
+  color: black;
+  border-radius: 10px;
+}
+
+.obrot-kafelka-tyl {
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
+.tytul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+.obrot-kafelka > .obrot-kafelka-srodek > .obrot-kafelka-przod{
+  z-index: 1;
+}
+.obrot-kafelka > .obrot-kafelka-srodek > .obrot-kafelka-przod > h2{
+  font-size: 70px;
+  font-weight: normal;
+  font-family: monospace;
+  color: white;
+}
+.listowanie {
+  list-style-position: inside;
+  font-size: 20px;
+  font-family: monospace;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+.listowanie > li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.niebieski > .listowanie > li:hover {
+  background-color: #0b7dda;
+  border-radius: 5px;
+}
+.czerwony > .listowanie > li:hover {
+  background-color: #f21c0d;
+  border-radius: 5px;
+}
+.rozowy > .listowanie > li:hover {
+  background-color: #f20db5;
+  border-radius: 5px;
+}
+.fioletowy > .listowanie > li:hover {
+  background-color: #4a0df2;
+  border-radius: 5px;
+}
+.listowanie > li > a {
+  font-size: 20px;
+  font-family: monospace;
+  color: white;
+  text-decoration: none;
+}
+.kafelki {
+  width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.niebieski {
+  background-color: #2196F3;
+}
+.czerwony {
+  background-color: #f44336;
+}
+.rozowy {
+  background-color: #f538c2;
+}
+.fioletowy {
+  background-color: #6b38f5;
+}
+@media all and (max-width: 1330px) {
+  .obrot-kafelka{
+    transform: translateY(0px);
+  }
+}

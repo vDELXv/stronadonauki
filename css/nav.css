@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(38, 38, 38);
+  animation: fade 1s ease forwards;
+}
+@keyframes fade {
+    from {
+      opacity: 0.2;
+    }
+    to {
+      opacity: 1;
+    }
+}
+nav a {
+  position: fixed;
+  top: -50px;
+  transition: 0.3s;
+  padding: 15px;
+  height: 70px;
+  width: 120px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 0px 5px 5px;
+  font-family: monospace;
+  text-align: center;
+  z-index: 5;
+}
+
+nav a:hover {
+  top: 0;
+}
+
+#strona_glowna {
+  left: 20px;
+  background-color: #4CAF50;
+  box-shadow: 0 0 10px rgb(38, 38, 38);
+}
+
+#cplusplus {
+  left: 180px;
+  background-color: #2196F3;
+  box-shadow: 0 0 10px rgb(38, 38, 38);
+}
+
+#html {
+  left: 340px;
+  background-color: #f44336;
+  box-shadow: 0 0 10px rgb(38, 38, 38);
+}
+
+#css {
+  left: 500px;
+  background-color: #f538c2;
+  box-shadow: 0 0 10px rgb(38, 38, 38);
+}
+#js {
+  left: 660px;
+  background-color: #6b38f5;
+  box-shadow: 0 0 10px rgb(38, 38, 38);
+}
+#grafika {
+  left: 820px;
+  background-color: #cd7032;
+  box-shadow: 0 0 10px rgb(38, 38, 38);
+}
+#gry{
+  left: 980px;
+  background-color: #3234cd;
+  box-shadow: 0 0 10px rgb(38, 38, 38);
+}
+@media all and (max-width: 1330px) {
+  nav a {
+  position: absolute;
+  left: -110px;
+  transition: 0.3s;
+  height: 23px;
+  padding: 15px 45px 15px 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  font-family: monospace;
+  text-align: left;
+  z-index: 5;
+}
+
+  nav a:hover {
+    left: 0;
+  }
+
+  #strona_glowna {
+    top: 20px;
+    left: -110px;
+  }
+  #strona_glowna:hover{
+    left: 0px;
+  }
+
+  #cplusplus {
+    top: 80px;
+    left: -110px;
+  }
+  #cplusplus:hover{
+    left:0px;
+  }
+
+  #html {
+    top: 140px;
+    left: -110px;
+  }
+  #html:hover{
+    left:0px;
+  }
+
+  #css {
+    top: 200px;
+    left: -110px;
+  }
+  #css:hover{
+    left:0px;
+  }
+  #js {
+    top: 260px;
+    left: -110px;
+  }
+  #js:hover{
+    left:0px;
+  }
+  #grafika {
+    top: 320px;
+    left: -110px;
+  }
+  #grafika:hover{
+    left:0px;
+  }
+  #gry{
+    top: 380px;
+    left: -110px;
+  }
+  #gry:hover{
+    left:0px;
+  }
+}

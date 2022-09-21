@@ -1,0 +1,73 @@
+#wybor {
+  position: fixed;
+  z-index: 6;
+  top:110px;
+  right: -180px;
+  transition: 0.3s;
+  padding: 15px;
+  height: 240px;
+  width: 200px;
+  border-radius: 5px 0px 0px 5px;
+  background-color: #4CAF50;
+  box-shadow: 0 0 10px rgb(38, 38, 38);
+}
+#wybor:hover {
+  right: 0px;
+}
+#wybor > p {
+  position: absolute;
+  display:block;
+  text-transform:uppercase;
+  width:14px;
+  line-height:17px;
+  margin-left: -5px;
+  text-align:center;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: monospace;
+  text-align: center;
+}
+#przyciski {
+  width: 170px;
+  margin-left: 35px;
+  text-align:center;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: monospace;
+  text-align: center;
+}
+.przycisk {
+  background-color: rgb(38, 38, 38);
+  border: 0px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  border-radius: 5px;
+  outline: 0;
+  font-size: 11px;
+  width: 90%;
+}
+.przycisk1 {
+  background-color: rgb(38, 38, 38);
+  border: 0px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  border-radius: 5px;
+  outline: 0;
+  font-size: 11px;
+}
+.wejscie {
+  background-color: rgb(38, 38, 38);
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  width: 70%;
+  margin-right: 5px;
+  outline: 0;
+  padding: 3px;
+}
